@@ -1,0 +1,128 @@
+
+
+<div class="container">
+    <h1>Prime Number Check</h1>
+    <p class="intro">هنا يا صاحبي، عايز تعرف إذا كان الرقم <strong>prime</strong> ولا لأ. طيب، نعرفها ازاي؟</p>
+
+    <section class="concept">
+        <h2>العدد الأولي (Prime Number)</h2>
+        <p>العدد الأولي ما ينفعش يتقسم إلا على نفسه وعلى <strong>الواحد (1)</strong> بس. يعني لو عملنا <strong>عداد (Counter)</strong> يحسب عدد المرات اللي باقي القسمة فيها يساوي صفر لما نقسم العدد على الأرقام من 1 للعدد نفسه، هيكون الناتج <strong>2</strong>، وده يعني إنه العدد <strong>prime</strong>.</p>
+    </section>
+
+    <section class="example">
+        <h2>مثال: العدد 5</h2>
+        <ul>
+            <li>5 % 1 = 0</li>
+            <li>5 % 2 = 1</li>
+            <li>5 % 3 = 2</li>
+            <li>5 % 4 = 1</li>
+            <li>5 % 5 = 0</li>
+        </ul>
+        <p>بما إن باقي القسمة يساوي صفر مرتين بس (على <strong>1</strong> وعلى نفسه)، يبقى <strong>العدد 5</strong> هو عدد <strong>prime</strong>.</p>
+    </section>
+
+    <section class="extended">
+        <h2>لو قلنا من 1 للعدد مطروح منه واحد:</h2>
+        <ul>
+            <li>5 % 1 = 0</li>
+            <li>5 % 2 = 1</li>
+            <li>5 % 3 = 2</li>
+            <li>5 % 4 = 1</li>
+        </ul>
+        <p>هتلاقي هنا عدد باقي القسمة يساوي <strong>0</strong> واحد فقط، وده معناه إن العدد <strong>prime</strong> لأنه مقبلش القسمة غير على <strong>الواحد (1)</strong> الصحيح.</p>
+
+        <h2>لو قلنا من 2 للعدد مطروح منه واحد:</h2>
+        <ul>
+            <li>5 % 2 = 1</li>
+            <li>5 % 3 = 2</li>
+            <li>5 % 4 = 1</li>
+        </ul>
+        <p>هنا هتلاقي باقي القسمة اللي يساوي <strong>0</strong> هو <strong>صفر</strong>، يعني مفيش أي رقم قبل القسمة عليه! وبرضو كدا العدد <strong>prime</strong>.</p>
+    </section>
+
+    <section class="note">
+        <h2>ملاحظة:</h2>
+        <p>كل الحلول اللي فاتت هتمشي معاك صح ومش هتجيب نتيجة غلط، بس فكرة السؤال هنا إنه حاططلك <strong>time limit</strong>، يعني وقت معين لكل اختبار، ولو أخدت وقت أكتر من الوقت المحدد هتطبعلك رسالة <strong>time limit exceeded</strong>.</p>
+        <h3>طيب، الحل؟</h3>
+        <p>هنفكر <strong>mathematically</strong> شوي! عندك قاعدة بتقول إن أي رقم لا يقبل القسمة إلا على <strong>نصفه (Half)</strong> أو أقل. تعال نعمل <strong>test</strong> بسيط على رقم غير <strong>prime</strong>، مثلاً <strong>20</strong>.</p>
+
+        <h4>بص:</h4>
+        <ul>
+            <li>هل تقدر تقسم الـ <strong>20</strong> على <strong>11</strong>؟ أكيد <strong>لا</strong>، كدا هيكون في باقي قسمة.</li>
+            <li>هل تقدر تقسم على <strong>10</strong>؟ <strong>نعم</strong>، كدا باقي القسمة يساوي <strong>0</strong>.</li>
+        </ul>
+        <p>إذن، إذا كان <strong>النص (Half)</strong> هينفع:</p>
+        <ul>
+            <li><strong>20</strong> على <strong>10</strong> = <strong>2</strong>، نفع والدنيا تمام ومافيش أي كسور يعني مفيش بواقي قسمة.</li>
+            <li><strong>20</strong> على <strong>9</strong> = <strong>2 وشوية كسور</strong>، كدا باقي القسمة لا يساوي صفر، يعني لا يقبل القسمة عليه.</li>
+            <li><strong>20</strong> على <strong>5</strong> = <strong>4</strong>، نفع والدنيا تمام ومافيش أي كسور.</li>
+        </ul>
+        <p>يبقى هنا القاعدة مظبوطة: الرقم مش هيقبل القسمة إلا على <strong>نصفه (Half)</strong> أو أقل، أما أعلى من نصه فمفيش أرقام هتقبل القسمة عليها.</p>
+    </section>
+</div>
+
+<style>/* Reset default browser styling */
+
+*{text-align:center;
+direction:rtl;
+}
+
+h1 {
+font-size: 2em;
+margin-bottom: 20px;
+color: #333;
+}
+
+h2 {
+font-size: 1.5em;
+margin: 20px 0 10px;
+color: #444;
+}
+
+h3 {
+font-size: 1.25em;
+margin: 20px 0 10px;
+color: #555;
+}
+
+h4 {
+font-size: 1.1em;
+margin: 10px 0;
+color: #666;
+}
+
+p {
+margin: 10px 0;
+}
+
+ul {
+list-style-type: disc;
+margin: 10px 0 10px 20px;
+}
+
+strong {
+font-weight: bold;
+color: #000;
+}
+
+.intro {
+margin-bottom: 20px;
+}
+
+.concept, .example, .extended, .note {
+margin-bottom: 30px;
+padding: 15px;
+background: #f9f9f9;
+border-left: 5px solid #007bff;
+}
+
+.note {
+background: #e9f5ff;
+border-color: #00aaff;
+}
+
+ul li {
+margin-bottom: 10px;
+list-style: none;
+}
+</style>

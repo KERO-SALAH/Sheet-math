@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Rakkas&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="ans" id="ans">
+      <div class="container">
+        <h1 class="topic">Prime N umber Check</h1>
+        <p class="intro ">
+          هنا يا صاحبي، عايز تعرف إذا كان الرقم <strong>prime</strong> ولا لأ.
+          طيب، نعرفها ازاي؟
+        </p>
+        <section class="concept">
+          <img src="https://i.ibb.co/sKf3mWm/1665918397-696x476.jpg" alt="" />
+
+          <h2>العدد الأولي (Prime Number)</h2>
+          <p>
+            هو العدد الذي يقبل القسمة علي نفسة و علي الواحد الصحيح فقط . يعني لو
+            عملنا
+            <strong>عداد (Counter)</strong> يحسب عدد المرات اللي باقي القسمة
+            فيها يساوي صفر - لما نقسم العدد على الأرقام من 1 للعدد نفسه - هيكون
+            الناتج <strong>2</strong>، وده يعني إنه العدد
+            <strong>prime</strong>.
+          </p>
+        </section>
+
+        <section class="example">
+          <h2 class="foucus">مثال: العدد 5</h2>
+          <ul>
+            <li>5 % 1 = 0</li>
+            <li>5 % 2 = 1</li>
+            <li>5 % 3 = 2</li>
+            <li>5 % 4 = 1</li>
+            <li>5 % 5 = 0</li>
+          </ul>
+          <img src="https://i.ibb.co/syFmpBc/image.png" alt="" />
+          <p>
+            بما إن الـ Modulo كان بيساوي صفر مرتين ، يبقى
+            <strong>العدد 5</strong> هو عدد <strong>prime</strong>.
+          </p>
+        </section>
+
+        <section class="extended">
+          <h2 class="foucus">
+            طيب ماذا لو : بدءنا من 1 للعدد مطروح منه واحد (يعني من 1 للـ 4 ):
+          </h2>
+          <ul>
+            <li>5 % 1 = 0</li>
+            <li>5 % 2 = 1</li>
+            <li>5 % 3 = 2</li>
+            <li>5 % 4 = 1</li>
+          </ul>
+          <img src="https://i.ibb.co/Z2TMfm7/image.png" alt="" />
+
+          <p>
+            هتلاقي هنا إن الـ Modulo كان بيساوي صفر مرا وحدا ، وده معناه إن
+            العدد
+            <strong>prime</strong> لأنه مقبلش القسمة غير على
+            <strong>الواحد (1)</strong> الصحيح، لاني موصلتش للرقم نفسة لاني ذي
+            مقولتلك فوق من 1 الي (n-1)
+          </p>
+        </section>
+        <section class="extended">
+          <h2 class="foucus">طيب ماذا لو بدءنا من 2 للعدد مطروح منه واحد:</h2>
+
+          <ul>
+            <li>5 % 2 = 1</li>
+            <li>5 % 3 = 2</li>
+            <li>5 % 4 = 1</li>
+          </ul>
+          <img src="https://i.ibb.co/MDLgT01/image.png" alt="" />
+          <p>
+            هنا هتلاقي الـ Modulo مفيش ولا مرة ساوي
+            <strong>الصفر</strong>، يعني مفيش أي رقم قبل القسمة عليه! وبرضو كدا
+            العدد <strong>prime</strong>.
+          </p>
+        </section>
+
+        <section class="note">
+          <h2 class="foucus">ملاحظة:</h2>
+          <p>
+            كل الحلول اللي فاتت هتمشي معاك صح ومش هتجيب نتيجة غلط، بس فكرة
+            السؤال هنا إنه حاططلك <strong>time limit</strong>، يعني وقت معين لكل
+            اختبار، ولو أخدت وقت أكتر من الوقت المحدد هتطبعلك رسالة
+            <strong>time limit exceeded</strong>.
+          </p>
+        </section>
+        <section class="extended">
+          <h3 class="foucus">طيب، الحل؟</h3>
+          <p>
+            هنفكر <strong>mathematically</strong> شوي! <br />
+            عندك قاعدة بتقول انك مش هتعرف تقسم الرقم غير علي الارقام اللي اقل من
+            او تسوي نصفة . <br />
+            تعال نعمل <strong>test</strong> بسيط ، مثلاً <strong>20</strong>.
+          </p>
+
+          <h4>بص:</h4>
+          <ul>
+            <li>
+              هل تقدر تقسم الـ <strong>20</strong> / <strong>11</strong>؟ أكيد
+              <strong>لا</strong>، كدا هيكون في باقي قسمة.
+            </li>
+            <li>
+              هل تقدر تقسم على <strong>10</strong>؟ <strong>ايوة</strong>.
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <strong>20</strong> /<strong>10</strong> = <strong>2</strong>، نفع
+              والدنيا تمام ومافيش أي كسور يعني مفيش بواقي قسمة.
+            </li>
+            <li>
+              <strong>20</strong> / <strong>9</strong> =
+              <strong>2 وشوية كسور</strong>، كدا باقي القسمة لا يساوي صفر، يعني
+              لا يقبل القسمة عليه.
+            </li>
+            <li>
+              <strong>20</strong> /<strong>5</strong> = <strong>4</strong>، نفع
+              والدنيا تمام ومافيش أي كسور.
+            </li>
+          </ul>
+          <p>
+            يبقى هنا القاعدة مظبوطة: الرقم مش هيقبل القسمة الا علي الارقام
+            <strong> الاقل من او تساوي نصفه </strong> ، أما أعلى من نصه فمفيش
+            أرقام هتقبل القسمة عليها.
+          </p>
+          <p class="foucus">
+            صراحه احنا برضوا لسه محلناش مشكله <strong>time limit</strong> بس برضو الحل صح
+          </p>
+        </section>
+        <section class="extended">
+          <p>تعال نفكر تاني طيب 😅</p>
+          <p>
+            عندك قاعدة تاني بتقول انه لو مكنش في Modulo  من 2حتي sqrt(n) الرقم فدة
+         معناه انه عدد اولي لانه مقبلش القسمه نهائي علي اي ارقام في الـ range دا
+          </p>
+          <img src="https://i.ibb.co/qN9nCwJ/image.png" alt="">
+          <p>اكيد طبعا عارفين لي !</p>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
