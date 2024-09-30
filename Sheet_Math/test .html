@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply External CSS</title>
+    <!-- هنا سيتم إضافة الـ CSS الذي سيتم جلبه -->
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is a paragraph styled by external CSS.</p>
+
+    <script>
+        // المسار إلى ملف CSS
+        const url = 'https://fox-cs.blogspot.com/p/blog-page_30.html';
+
+        // جلب محتوى الملف
+        fetch(url)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.text(); // تحويل الاستجابة إلى نص
+          })
+          .then(cssContent => {
+            // هنا يتم معالجة الـ CSS المستخرج من الملف
+            console.log(cssContent);
+            
+            // إنشاء عنصر <style> جديد
+            const styleElement = document.createElement('style');
+            styleElement.textContent = cssContent;
+            
+            // إدراج عنصر <style> داخل <head> لتطبيق الـ CSS على الصفحة
+            document.head.appendChild(styleElement);
+          })
+          .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+          });
+    </script>
+</body>
+</html>

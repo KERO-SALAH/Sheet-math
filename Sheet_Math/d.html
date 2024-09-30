@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Rakkas&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="ans" id="ans">
+      <div class="container">
+        <h1 class="topic">Xor</h1>
+        <p class="intro ">في السؤال دا يا صااحبي عايزك تطلع قيم المعادلة الموضحة في الصورة قدامك  
+        </p>
+        <section class="concept">
+          <img src="https://i.ibb.co/d039SkH/image.png" alt="" />
+
+          <h2 class="foucus">الشرح:</h2>
+          <p>
+            هنا اليوزر هيدخل 3 قيم و هي a , b , Q وماذا بعد؟!
+            <br>
+            المفروض انك هتاخد القيم دي و تتعالم معاها طيب وبعدين برضو؟!
+            <ul>
+                <li>لو كان <strong>Q = 1</strong>: هتكون النتيجة <strong>A</strong>.</li>
+                <li>لو كان <strong>Q = 2</strong>: هتكون النتيجة <strong>B</strong>.</li>
+                <li>لو كان <strong>Q => 3</strong>: هتكون النتيجة <strong>A XOR B</strong>.</li>
+            </ul>
+            كمان هتلاحظ ان النمط دا بيتكرر كل 3 عناصر
+
+            فعلشان نحل المشكلة دي هنجيب ال  <strong>Modulo الـ 3 </strong>
+          </p>
+        </section>
+
+        <section class="example">
+          <h2 class="foucus">طيب انا معرفش يعني اي XOR </h2>
+          <p>
+            انا هنا هشرحلك الفكرة بس ، انما انت استخدم الرمز دا ( ^ ) وبس كدا  <br> <br>
+            لو فاكر البوابات اللي كانت عندنا ف كان في عندنا بوابات or , and ,xor etc 
+            <br>
+            المفروض القيم اللي بتطلع من كل بوابة بتكون 0 او 1 
+          </p>
+          <p class="im">برضو مش فاهم</p>
+<p>         تعال شوف المثال دا
+    <br>
+    1 1 1 (7) <br>
+    1 0 1 (5)
+    <br>
+    هنا تخيلت ان اليوزر دخل قيمة ال a ,b وكانت القم كالتالي 
+    <br>a = 7 <br>b = 5 <br>
+    وبعدين حولت القيم دي لباينري علشان اتعامل معاها بالبوابات 
+<br>
+دلوقتي انت المفروض تمشي بفكرة البوابة او كيفية عملها 
+<p class="im">برضو مش فاهم</p> <br>
+هقولك حاضر بص يا صااحبي بوابة xor  كل فكرتها انها بتجمع القيم عادي جدا  زي اي عملية جمع بس الاوتبوت هو المختلف 
+<br>
+<p class="im">بمعني اي ؟</p> 
+<br>
+هنا لما تجمع لو كان العدد اللي معاك فردي ف انت بتحط 1 لو كان زوجي ف انت بتحط 0 
+ اتمني تكون وصلت </p>       
+ لو رجعنا للمثال السابق 
+ <br>
+ 1 1 1 (7) <br>
+ 1 0 1 (5)
+ <br>
+ تعال نجمع  جمع عادي جدا 
+<br>
+1 + 1 =2 عدد  <p class="foucuss">زوجي</p> يبقي اكتب 0 <br>
+1 + 0 =2 عدد  <p class="foucuss">فردي</p> يبقي اكتب 1 <br>
+1 + 1 =2 عدد  <p class="foucuss">زوجي</p> يبقي اكتب 0 
+<br>
+1 1 1 (7) <br>
+1 0 1 (5) <br>
+---------- <br>
+0 1 0 (2)
+<br> 
+</section>
+        <section class="extended">
+            <img src="https://i.ibb.co/PhzftKf/image.png" alt="">
+            <p>تأكد من انك تحطها بين الاقواس </p>
+
+        </section>
+        
+      </div>
+    </div>
+  </body>
+</html>

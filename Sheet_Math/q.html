@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Rakkas&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q - Product</title>
+  </head>
+  <body>
+    <div class="ans" id="ans">
+      <div class="container">
+        <h1 class="topic">Q - Product</h1>
+        <p class="intro ">
+            السؤال دا اسهل منه مفيش  
+        </p>
+        <section class="concept">
+         
+          <h2 class="foucus">الشرح:</h2>
+          <p>
+              <br>            بيقولك يا بااشاا اليوزر هيدخل 3 قيم وهي L ,R,M و المفروض انك هتجيب حاصل ضرب الارقام من L to R 
+            وبعدين هتجيب Modulo بتاع الناتج علي ال M          </p>
+        </section>
+        <section class="concept">
+         
+            <h2 class="foucus">الفكرة:</h2>
+            <p>
+                <br>        بدل متجيب حاصل الضرب و بعدين الـModulo  انت مع كل عملية ضرب هتجيب الـModulo 
+            <p class="foucussr">فهمت ؟ </p></section>
+  
+        <section class="example">
+            <h2 class="foucus">example</h2>
+            بأفتراض ان الانبوت كان 
+            <br>L = 1 <br>
+            R = 10 <br>
+            M = 10 <br>
+             يعني المتوقع هو انك هتضرب الارقام من 1 الي 10 و بعددين تجيب Modulo  
+          <ul><li>
+1*2*3*4*5*6*7*8*9*10 = 3628800 <br> 3628800 % 10 = 0
+          </li></ul>
+          اكيد لاحظت ان الرقم ممكن يكون كبير قوي و بسبب كدا هيحصل overflow 
+    طيب و زي مقولتلك انت بدل متجيب حاصل الضرب و بعدين تجيب الـModulo   ، انت مع كل عملية ضرب مزدوجة هتجيب المودول بتاعها ودا كلو بيتخزن في نفس المتغير 
+   
+   <br>وبفتراض انك عرفت متغير اسمه sum  و خزنت فية قيمة =0  <ul>
+    <li>sum *= 1  </li>
+    <li>sum %= 10 </li>
+
+    <li class="foucussg">sum = 1 </li>
+    
+    <li>sum *= 2  </li>
+    <li>sum %= 10 </li>
+    
+
+    <li class="foucussg">sum = 2 </li>
+    
+  
+    
+    <li>sum *= 3  </li>
+    <li>sum %= 10 </li>
+    
+
+    <li class="foucussg">sum = 6 </li>
+    
+  
+    
+    <li>sum *= 4  </li>
+    <li>sum %= 10 </li>
+    
+    
+
+    <li class="foucussg">sum = 4 </li>
+    
+  
+
+    <li>sum *= 5  </li>
+    <li>sum %= 10 </li>
+    
+
+    <li class="foucussg">sum = 0 </li>
+    
+  
+    <li>sum *= 6  </li>
+    <li>sum %= 10 </li>
+    
+
+    <li class="foucussg">sum = 0 </li>
+    
+  
+    <li>sum *= 7  </li>
+    <li>sum %= 10 </li>
+    
+
+    <li class="foucussg">sum = 0 </li>
+    
+    <li>sum *= 8  </li>
+    <li>sum %= 10 </li>
+    
+
+    <li class="foucussg">sum = 0 </li>
+    
+    <li>sum *= 9  </li>
+    <li>sum %= 10 </li>
+    
+
+    <li class="foucussg">sum = 0 </li>
+    
+    <li>sum *= 10  </li>
+    <li>sum %= 10 </li>
+    
+
+    <li class="foucussg">sum = 0 </li>
+    
+                  
+                
+                </ul>  
+</section>
+<section class="example">
+    <h2 class="">دا كلو علشان ميحصلش overflow</h2>
+
+
+</section>
+      </div>
+    </div>
+  </body>
+</html>

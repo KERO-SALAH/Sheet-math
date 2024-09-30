@@ -19,7 +19,7 @@
   border-radius: 20px;
   border-right: 5px solid #007bff;
 }
-.intro{
+.intro {
   color: white;
 }
 #ans {
@@ -69,10 +69,8 @@ strong {
   margin-bottom: 20px;
 }
 
-.concept,
-.example,
-.extended,
-.note {
+
+section {
   margin-bottom: 30px;
   padding: 15px;
   background: #f9f9f9;
@@ -91,14 +89,53 @@ ul li {
 }
 .foucus {
   background-color: #e9f5ff;
-
-  display: inline;
   border-left: 3px solid red;
   border-right: 3px solid red;
+  padding: 0px 5px;
+}
+.foucuss {
+  background-color: #83b5df;
+  display: inline;
+
+  border-radius: 20px;
+  padding: 0px 5px;
+}
+.foucussr {
+  background-color: rgb(255, 117, 117);
+  display: inline;
+
+  padding: 0px 5px;
+}
+.foucussg {
+  background-color: rgb(123, 245, 123);
+  display: inline;
+
   padding: 0px 5px;
 }
 #ans img {
   max-width: 100%;
   border-radius: 5%;
   box-shadow: -7px 7px 9px #758cc2;
+}
+.im {
+  background-color: rgb(228, 175, 175);
+  display: inline;
+  border-left: 3px solid green;
+  border-right: 3px solid green;
+  padding: 0px 5px;
+}
+code {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  margin: 10px 0;
+  direction: ltr;
+  text-align: left;
+}
+.example {
+  background-color: #e0e0e0;
+  padding: 15px;
+  border-left: 4px solid #007bff;
+  margin: 10px 0;
 }
